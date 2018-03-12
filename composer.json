@@ -1,0 +1,23 @@
+{
+	"name": "envato/vvv-wp-envato-market",
+	"license": "GPLv2",
+	"repositories":[
+		{
+			"type":"composer",
+			"url":"https://wpackagist.org"
+		}
+	],
+	"authors": [
+		{
+			"name": "Envato",
+			"email": "dave.baker@envato.com"
+		}
+	],
+	"require": {
+	},
+	"extra": {
+		"installer-paths": {
+			"docroot/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+		}
+	}
+}
