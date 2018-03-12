@@ -87,7 +87,7 @@ if [ ! -e docroot/wp-content/plugins/envato-market/envato-market.php ]; then
     cd envato-market
     composer install
     npm install
-    ./dev-lib/install-pre-commit-hook.sh
+    echo 'grunt precommit' > .git/hooks/pre-commit
 	cd ../../../..
 fi
 
