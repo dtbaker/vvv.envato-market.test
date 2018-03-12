@@ -84,7 +84,7 @@ composer update
 if [ ! -e docroot/wp-content/plugins/envato-market/envato-market.php ]; then
 	cd docroot/wp-content/plugins
 	git clone -b develop --recurse-submodules git://github.com/envato/wp-envato-market.git envato-market
-    envato-market
+    cd envato-market
     composer install
     npm install
     ./dev-lib/install-pre-commit-hook.sh
